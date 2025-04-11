@@ -4,12 +4,14 @@ import random
 def main():
     total = 0
     numbers = []
-    while True:
+
+    while total <= 100:
         num = random.randint(1,10)
-        if total + num > 100:
-            break
         numbers.append(num)
         total += num
+
+    total -= numbers[-1]
+    numbers.pop()
 
     print(f'The random values are {numbers}')
     print(f'The total is {total}')
