@@ -11,7 +11,6 @@ def main():
         total += num
 
     total -= numbers[-1]
-    numbers.pop()
 
     print(f'The random values are {numbers}')
     print(f'The total is {total}')
